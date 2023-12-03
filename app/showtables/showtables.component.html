@@ -1,0 +1,98 @@
+<head>
+  <meta charset="utf-8">
+  <title> Go 4 Food</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link src="assets/Images/Go 4 Food.png" rel="icon">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link scr="assets/Animation/animate.min.css" rel="stylesheet">
+  <link src="assets/Animation/owl.carousel.min.css" rel="stylesheet">
+  <link src="assets/Animation/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.10.0/dist/css/bootstrap.min.css"
+    
+  integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  
+
+    <style>
+    body {
+        background: #eecda3;
+        background: -webkit-linear-gradient(to right, #eecda3, #ef629f);
+        background: linear-gradient(to right, #eecda3, #ef629f);
+        min-height: 100vh;
+      }
+      .background-image {
+            background-image: url('assets/Images/bg image.jpg'); 
+            background-size: cover; 
+            background-position: center ; 
+            height: 800px; 
+}
+    </style>
+</head>
+<div class="background-image">
+<div class="px-4 px-lg-0">
+    <!-- For demo purpose -->
+    <div class="container text-white py-5 text-center">
+      <h1 class="section-title ff-secondary text-center text-primary fw-normal">Tables Booked</h1>
+     
+    </div>
+    <div class="pb-5">
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-12 p-5 bg-transparent rounded shadow-sm mb-5">
+              <div class="table-responsive">
+                  <table class="table bg-transparent  ">
+                    <thead>
+                      <tr align="center">
+                        <th scope="col" class="border-0 bg-transparent">
+                          <div class="p-2 px-3 text-uppercase">BookingId</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-transparent">
+                          <div class="py-2 text-uppercase">Table Number</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-transparent">
+                          <div class="py-2 text-uppercase">Name</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-transparent">
+                          <div class="py-2 text-uppercase">E-MailId</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-transparent">
+                          <div class="py-2 text-uppercase">Date</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-transparent">
+                          <div class="py-2 text-uppercase">No.of.Persons</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-transparent">
+                          <div class="py-2 text-uppercase">Remove Table</div>
+                        </th>
+                      </tr>
+                    </thead>
+                      <tbody>
+                        <tr *ngFor="let customer of customers" align="center">
+                          <td>{{customer.sno   }}</td>
+                          <td > {{customer.tableNumber}}</td>
+                          <td>{{customer.name  }}</td>
+                          <td>{{customer.eMail }}</td>
+                          <td>{{customer.date }}</td>
+                          <td>{{customer.people }}</td>
+                          <td><button (click)="deleteCustomer(customer)"><span class="fas fa-trash"></span></button></td>
+
+                      </tr>
+                           
+
+                       
+        
+                       
+                    </tbody>
+                    </table></div></div></div></div></div></div></div>
+                    
+                    
+       

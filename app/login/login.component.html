@@ -1,0 +1,117 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="login.component.css">
+
+
+  <style>
+    .card {
+      border: lightblue;
+      margin-right: auto;
+      margin-left: auto;
+      width: 500px;
+      height: 620px;
+      background-color:transparent;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .background-image {
+  
+      background-size: cover;
+      background-position: center;
+      height: 800px;
+    }
+
+    .button1 {
+      width: 16%;
+      height: 20%;
+    }
+  </style>
+
+
+</head>
+
+<div class="background-image"><br />
+  <div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+      <div class="card">
+        <div class="d-flex justify-content">
+          <div class="brand_logo_container">
+
+          </div>
+        </div>
+        <div class="d-flex justify-content-center form_container">
+
+
+
+          <form #loginForm="ngForm" (ngSubmit)="validateLogin(loginForm.value)" novalidate>
+
+            <div class="text-center" border-radius="10px">
+              <img src="assets/Images/Go 4 Food.png" class="img-fluid  my-3" width="200px" style="border-radius: 15px
+      ;" alt="profile">
+            </div> <br> <br>
+
+            <div style="width: 250px;">
+
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                <input class="form-control" type="text" name="emailId" ngModel #emailId="ngModel"
+                  placeholder="Enter Email-ID" required minlength="8" maxlength="30" />
+              </div>
+              <div *ngIf="emailId.errors?.['required'] && emailId.touched">
+                <h6 style="color: red;">Please Enter EmailId </h6>
+              </div> 
+              <div *ngIf="emailId.errors?.['minlength'] && emailId.touched">
+                <h6 style="color: red;"> Please Enter Vaild EmailId</h6>
+              </div> <br />
+
+
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                <input class="form-control" type="password" name="password" ngModel #password="ngModel"
+                  placeholder="Enter Password" required />
+              </div>
+              <div *ngIf="password.errors?.['required'] && password.touched">
+                <h6 style="color: red;">Please Enter Password </h6>
+              </div>
+              <div *ngIf="password.errors?.['minlength'] && password.touched">
+                <h6 style="color: red;">Please Enter Vaild Password Format </h6>
+              </div><br/>
+
+
+
+              <div>
+                <p style="font-size: 20px; color: #000;">
+                 
+                  <span style="background-color:white; padding: 5px; border-radius: 5px; display: inline-block; min-width: 210px; letter-spacing: 8px; font-family:Copperplate, Papyrus, fantasy">{{ captchaText }}</span>
+                  <button class="button button1" style="color: black; background-color:white" (click)="refreshCaptcha()">
+                    <span class="fa">&#xf021;</span>
+                  </button>
+               
+                </p>
+              </div>
+              
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-keyboard"></i>
+                </span>
+                <input class="form-control" type="text" name="captcha" ngModel #captcha="ngModel"
+                  placeholder="Enter CAPTCHA" required />
+              </div>
+              <div *ngIf="captcha.errors?.['required'] && captcha.touched">
+                <h6 style="color: red;">Please Enter CAPTCHA</h6>
+              </div><br/>
+
+
+              <button class="btn btn-light" [disabled]="!loginForm.valid"style="color:black; background-color:lightblue;">Login</button><br>
+
+            </div>
+            <div>
+              <a class="nav-link" routerLink="forgotpassword" style="color:blue;">fogotpassword</a>
+              <a class="nav-link" routerLink="register" style="color:blue;">New User?Register</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>

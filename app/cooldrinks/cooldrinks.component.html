@@ -1,0 +1,261 @@
+<head>
+    <head>
+        <meta charset="utf-8">
+        <title> Go 4 Food</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <link src="assets/Images/Go 4 Food.png" rel="icon">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+         
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+      
+        <link scr="assets/Animation/animate.min.css" rel="stylesheet">
+        <link src="assets/Animation/owl.carousel.min.css" rel="stylesheet">
+        <link src="assets/Animation/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.10.0/dist/css/bootstrap.min.css"
+          
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        
+        <style>
+        .background-image {
+            background-image: url('assets/Images/bg image1.jpg'); 
+            background-size: cover; 
+            background-position: center ; 
+            height: 900px; 
+}
+</style>
+    </head>
+
+    
+    </head>
+    <div class="background-image"><br/><br/>
+        <div align="center">
+            <h2 class="section-title ff-secondary text-center text-primary fw-normal" >Cool Drinks</h2></div><br>
+            
+    <div class="container px-4 px-lg-4 mt-4 ">
+        
+            
+        <div class="row gx-4 gx-lg-5 row-cols-5 row-cols-md-8 row-cols-xl-4 justify-content-center ">
+            <div class="col mb-5">
+                <div class="card bg-transparent">
+
+
+                    <div class="card-body p-4 ">
+                        <div class="text-center">
+
+                            <div *ngFor="let cooldrinks of fooditems24 "><br><br>
+
+                                <img class="flex-shrink-0 img-fluid rounded" src={{cooldrinks.imgsrc}} alt=""
+                                    style="width: 120px;">
+
+                                <h4 class="card-title">{{cooldrinks.name}}</h4>
+                                <p class="card-text">{{cooldrinks.description}}</p>
+                                <p><b>Price:</b> ₹{{cooldrinks.price}}/-</p>
+                                <p align="right"><button (click)="addToCart(cooldrinks)" class="btn btn-light"
+                                        align="right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> </button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-transparent">
+
+
+                    <div class="card-body p-4 ">
+                        <div class="text-center">
+
+                            <div *ngFor="let cooldrinks of fooditems25 "><br><br>
+
+                                <img class="flex-shrink-0 img-fluid rounded" src={{cooldrinks.imgsrc}} alt=""
+                                    style="width: 120px;">
+
+                                <h4 class="card-title">{{cooldrinks.name}}</h4>
+                                <p class="card-text">{{cooldrinks.description}}</p>
+                                <p><b>Price:</b> ₹{{cooldrinks.price}}/-</p>
+                                <p align="right"><button (click)="addToCart(cooldrinks)" class="btn btn-light"
+                                        align="right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> </button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5">
+                <div class="card bg-transparent">
+
+
+                    <div class="card-body p-4 ">
+                        <div class="text-center">
+
+                            <div *ngFor="let cooldrinks of fooditems26 "><br><br>
+
+                                <img class="flex-shrink-0 img-fluid rounded" src={{cooldrinks.imgsrc}} alt=""
+                                    style="width: 120px;">
+
+                                <h4 class="card-title">{{cooldrinks.name}}</h4>
+                                <p class="card-text">{{cooldrinks.description}}</p>
+                                <p><b>Price:</b> ₹{{cooldrinks.price}}/-</p>
+                                <p align="right"><button (click)="addToCart(cooldrinks)" class="btn btn-light"
+                                        align="right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> </button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-transparent">
+
+
+                    <div class="card-body p-4 ">
+                        <div class="text-center">
+
+                            <div *ngFor="let cooldrinks of fooditems27 "><br><br>
+
+                                <img class="flex-shrink-0 img-fluid rounded" src={{cooldrinks.imgsrc}} alt=""
+                                    style="width: 120px;">
+
+                                <h4 class="card-title">{{cooldrinks.name}}</h4>
+                                <p class="card-text">{{cooldrinks.description}}</p>
+                                <p><b>Price:</b> ₹{{cooldrinks.price}}/-</p>
+                                <p align="right"><button (click)="addToCart(cooldrinks)" class="btn btn-light"
+                                        align="right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> </button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-transparent">
+
+
+                    <div class="card-body p-4 ">
+                        <div class="text-center">
+
+                            <div *ngFor="let cooldrinks of fooditems28 "><br><br>
+
+                                <img class="flex-shrink-0 img-fluid rounded" src={{cooldrinks.imgsrc}} alt=""
+                                    style="width: 120px;">
+
+                                <h4 class="card-title">{{cooldrinks.name}}</h4>
+                                <p class="card-text">{{cooldrinks.description}}</p>
+                                <p><b>Price:</b> ₹{{cooldrinks.price}}/-</p>
+                                <p align="right"><button (click)="addToCart(cooldrinks)" class="btn btn-light"
+                                        align="right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> </button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-transparent">
+
+
+                    <div class="card-body p-4 ">
+                        <div class="text-center">
+
+                            <div *ngFor="let cooldrinks of fooditems29  "><br><br>
+
+                                <img class="flex-shrink-0 img-fluid rounded" src={{cooldrinks.imgsrc}} alt=""
+                                    style="width: 120px;">
+
+                                <h4 class="card-title">{{cooldrinks.name}}</h4>
+                                <p class="card-text">{{cooldrinks.description}}</p>
+                                <p><b>Price:</b> ₹{{cooldrinks.price}}/-</p>
+                                <p align="right"><button (click)="addToCart(cooldrinks)" class="btn btn-light"
+                                        align="right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> </button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-transparent">
+
+
+                    <div class="card-body p-4 ">
+                        <div class="text-center">
+
+                            <div *ngFor="let cooldrinks of fooditems30 "><br><br>
+
+                                <img class="flex-shrink-0 img-fluid rounded" src={{cooldrinks.imgsrc}} alt=""
+                                    style="width: 120px;">
+
+                                <h4 class="card-title">{{cooldrinks.name}}</h4>
+                                <p class="card-text">{{cooldrinks.description}}</p>
+                                <p><b>Price:</b> ₹{{cooldrinks.price}}/-</p>
+                                <p align="right"><button (click)="addToCart(cooldrinks)" class="btn btn-light"
+                                        align="right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> </button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-transparent">
+
+
+                    <div class="card-body p-4 ">
+                        <div class="text-center">
+
+                            <div *ngFor="let cooldrinks of fooditems31 "><br><br>
+
+                                <img class="flex-shrink-0 img-fluid rounded" src={{cooldrinks.imgsrc}} alt=""
+                                    style="width: 120px;">
+
+                                <h4 class="card-title">{{cooldrinks.name}}</h4>
+                                <p class="card-text">{{cooldrinks.description}}</p>
+                                <p><b>Price:</b> ₹{{cooldrinks.price}}/-</p>
+                                <p align="right"><button (click)="addToCart(cooldrinks)" class="btn btn-light"
+                                        align="right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> </button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
